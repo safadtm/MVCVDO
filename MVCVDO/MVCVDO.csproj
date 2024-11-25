@@ -183,6 +183,7 @@
     <Content Include="Views\Event\Register.cshtml" />
     <Content Include="Views\Event\Login.cshtml" />
     <Content Include="Views\Event\AdminHome.cshtml" />
+    <Content Include="Views\Event\GetAllEmail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

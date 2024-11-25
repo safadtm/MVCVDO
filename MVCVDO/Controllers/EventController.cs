@@ -100,6 +100,15 @@ namespace MVCVDO.Controllers
             return View();
         }
 
+        // GET: Event/GetAllEmail
+        public ActionResult GetAllEmail()
+        {
+            EventRepository EvnRepo = new EventRepository();
+            ModelState.Clear();
+            return View(EvnRepo.GetAllEmail());
+        }
+
+
         // GET: Event/HomePage
         public ActionResult HomePage()
         {

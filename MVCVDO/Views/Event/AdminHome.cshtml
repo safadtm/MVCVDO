@@ -1,1 +1,24 @@
-﻿<h1>Admin Home</h1>
+﻿<div class="form-horizontal">
+    <h4>Admin Home</h4>
+    <hr />
+
+    @{int id = Convert.ToInt32(Session["user_id"]);
+
+        <div>
+            @Html.ActionLink("Add User", "GetAllEmail")
+        </div>
+        <div>
+            @Html.ActionLink("Reset Password", "")
+        </div>
+        <div>
+            @Html.ActionLink("Applications", "")
+        </div>
+        <div>
+            @Html.ActionLink("Add Department", "")
+        </div>
+        <div>
+            @Html.ActionLink("SignOut", "")
+        </div>
+
+    }
+</div>

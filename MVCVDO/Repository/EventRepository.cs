@@ -62,5 +62,36 @@ namespace MVCVDO.Repository
             conn.Close();
             return dt;
         }
+
+        //// GET ALL EMAIL
+        public List<Users> GetAllEmail()
+        {
+            Connection();
+
+            List<Users> EmailList = new List<Users>();
+
+            SqlCommand cmd = new SqlCommand("GetAllEmails", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            conn.Open();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            conn.Close();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                EmailList.Add(
+                    new Users
+                    {
+                        id = Convert.ToInt32(dr["id"]),
+                        email=Convert.ToString(dr["email"])
+
+                    }
+                    );
+            }
+
+            return EmailList;
+        }
     }
 }
