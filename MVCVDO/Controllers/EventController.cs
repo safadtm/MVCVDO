@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -108,6 +110,96 @@ namespace MVCVDO.Controllers
             return View(EvnRepo.GetAllEmail());
         }
 
+
+        // GET:Event/EmailAndPasswordSend
+        public ActionResult EmailAndPasswordSend(int id)
+        {
+            EventRepository EvnRepo = new EventRepository();
+            
+            return View(EvnRepo.GetAllEmail().Find(users=>users.id==id));
+        }
+
+        // POST:Event/EmailAndPasswordSend
+        [HttpPost]
+        public ActionResult EmailAndPasswordSend(Users user)
+        {
+
+            SendEmailToUser(user.email, user.usertype);
+            ViewBag.Message = "Password send to email";
+            ModelState.Clear(); 
+            return View();
+        }
+
+        // auto generate password
+        public string GeneratePassword()
+        {
+            string PasswordLength = "8";
+            string NewPassword = "";
+            string allowedChars = "";
+            allowedChars = "1,2,3,4,5,6,7,8,9,0";
+            allowedChars += "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,Z";
+            allowedChars += "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+            char[] sep =
+            {
+                 ','
+            };
+
+            
+            string[] arr = allowedChars.Split(sep);
+            string IDString = "";
+            string temp = "";
+
+            Random rand = new Random();
+            for (int i = 0; i < Convert.ToInt32(PasswordLength); i++)
+            {
+                temp = arr[rand.Next(arr.Length)];
+                IDString += temp;
+                NewPassword = IDString;
+            }
+            return NewPassword;
+        }
+
+        // Send Email To User
+        public void SendEmailToUser(string emailId, string usertype)
+        {
+            string strNewPassword = GeneratePassword().ToString();
+            EventRepository EmpRepo = new EventRepository();
+
+            // Save username and password in the database
+            EmpRepo.SaveDetails(emailId, strNewPassword, usertype);
+
+            var fromMail = new MailAddress("theboicoder@gmail.com", "ADMIN");
+            var fromEmailpassword = "adgggcaqsgwveebg"; // Use the generated app password here
+            var toEmail = new MailAddress(emailId);
+
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromMail.Address, fromEmailpassword)
+            };
+
+            var message = new System.Net.Mail.MailMessage(fromMail, toEmail)
+            {
+                Subject = "Registration Completed-MVC APP",
+                Body = $"<p>Your registration is complete. Your user ID is <strong>{toEmail.Address}</strong> and your password is <strong>{strNewPassword}</strong>.</p>",
+                IsBodyHtml = true
+            };
+
+            try
+            {
+                smtp.Send(message);
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                Console.WriteLine($"Error sending email: {ex.Message}");
+            }
+
+        }
 
         // GET: Event/HomePage
         public ActionResult HomePage()

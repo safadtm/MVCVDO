@@ -93,5 +93,35 @@ namespace MVCVDO.Repository
 
             return EmailList;
         }
+
+
+        //// Save Details
+        public bool SaveDetails(string email,string password,string usertype)
+        {
+            Connection();
+            SqlCommand cmd = new SqlCommand("UpdateGeneratePassword", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@Password", password);
+            cmd.Parameters.AddWithValue("@CurrentPassword", password);
+
+            cmd.Parameters.AddWithValue("@Usertype", usertype);
+
+            conn.Open();
+            int i = cmd.ExecuteNonQuery();
+            conn.Close();
+
+            if (i >= 1)
+            {
+
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
