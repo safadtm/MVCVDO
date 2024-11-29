@@ -201,6 +201,42 @@ namespace MVCVDO.Controllers
 
         }
 
+        // GET: Event/AddDepartment
+
+        public ActionResult AddDepartment()
+        {
+            return View();
+        }
+
+        // POST: Event/AddDepartment
+        [HttpPost]
+        public ActionResult AddDepartment(Department dept)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+
+                    EventRepository EvnRepo = new EventRepository();
+                    if (EvnRepo.AddDepartment(dept))
+                    {
+                        ViewBag.Message = "Department added Successfully";
+                        ModelState.Clear();
+                    }
+                }
+                return View();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        
+
+
+
+
         // GET: Event/HomePage
         public ActionResult HomePage()
         {

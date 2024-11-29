@@ -123,5 +123,31 @@ namespace MVCVDO.Repository
                 return false;
             }
         }
+
+        /// Add Department
+        public bool AddDepartment(Department obj)
+        {
+            Connection();
+            SqlCommand cmd = new SqlCommand("AddDepartment", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@DepartmentName", obj.DepartmentName);
+            cmd.Parameters.AddWithValue("@Status", obj.Status);
+
+            conn.Open();
+            int i = cmd.ExecuteNonQuery();
+            conn.Close();
+
+            if (i >= 1)
+            {
+
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
