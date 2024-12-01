@@ -187,6 +187,8 @@
     <Content Include="Views\Event\GetAllEmail.cshtml" />
     <Content Include="Views\Event\EmailAndPasswordSend.cshtml" />
     <Content Include="Views\Event\AddDepartment.cshtml" />
+    <Content Include="Views\Event\HomePage.cshtml" />
+    <Content Include="Views\Event\ResetPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

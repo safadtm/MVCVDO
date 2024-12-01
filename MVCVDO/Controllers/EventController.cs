@@ -243,6 +243,59 @@ namespace MVCVDO.Controllers
             return View();
         }
 
+        // GET:Event/ResetPassword
+        public ActionResult ResetPassword()
+        {
+            int id = Session["user_id"] != null ? Convert.ToInt32(Session["user_id"]) : 0;
+           // ViewBag.UserId = id;
+
+            // Fetch the current password from the database
+            EventRepository EvnRepo = new EventRepository();
+            var user = EvnRepo.GetUserById(id); // Assuming this fetches user data by ID
+
+            if (user != null)
+            {
+                var model = new Users
+                {
+                    currentPassword = user.password // Load current password into the model
+                };
+                return View(model);
+            }
+
+            ViewBag.Message = "User not found.";
+            return View();
+        }
+
+        // POST:Event/ResetPassword
+        [HttpPost]
+        public ActionResult ResetPassword(Users user)
+        {
+            int id = Session["user_id"] != null ? Convert.ToInt32(Session["user_id"]) : 0;
+            ViewBag.UserId = id;
+
+            try
+            {
+                // Ignore validation for the email field
+                ModelState.Remove("email");
+
+                if (ModelState.IsValid)
+                {
+                    EventRepository EvnRepo = new EventRepository();
+                    if (EvnRepo.ResetPassword(id, user))
+                    {
+                        ViewBag.Message = "Password reset successfully";
+                        ModelState.Clear();
+                    }
+                }
+
+                return View();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         //// GET: Event
         //public ActionResult Index()
         //{

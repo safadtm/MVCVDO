@@ -15,8 +15,11 @@ namespace MVCVDO.Models
         [Required]
         public string password { get; set; }
 
-        [Compare("password", ErrorMessage = "Confirm Password doesn't match, Type Again!")]
         public string currentPassword { get; set; }
+
+        [Compare("password", ErrorMessage = "Confirm Password doesn't match,Type Again!")]
+
+        public string confirmPassword { get; set; }
 
         public string usertype { get; set; }
 

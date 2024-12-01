@@ -7,24 +7,40 @@
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\adddepartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\adddepartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\emailandpasswordsend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\emailandpasswordsend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\adddepartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\adddepartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\emailandpasswordsend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\emailandpasswordsend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +60,7 @@
               "RelativeDocumentMoniker": "MVCVDO\\Controllers\\EventController.cs",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs",
               "RelativeToolTip": "MVCVDO\\Controllers\\EventController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAswM0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAAwAEBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T14:05:55.659Z",
               "IsPinned": true,
@@ -52,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Models\\Department.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Models\\Department.cs",
@@ -61,18 +77,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T13:31:18.957Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "EventRepository.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Repository\\EventRepository.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Repository\\EventRepository.cs",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Repository\\EventRepository.cs",
               "RelativeToolTip": "MVCVDO\\Repository\\EventRepository.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAA3wIYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAuwLgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T13:08:31.852Z",
               "IsPinned": true,
@@ -80,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AdminHome.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\AdminHome.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\AdminHome.cshtml",
@@ -93,25 +108,76 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\ResetPassword.cshtml*",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\ResetPassword.cshtml*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T05:43:55.376Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T05:32:28.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\Register.cshtml",
+              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\Register.cshtml",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\Register.cshtml",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\Register.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T05:04:20.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "MVCVDO\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Models\\Users.cs",
+              "RelativeToolTip": "MVCVDO\\Models\\Users.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA4wBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T05:03:17.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AddDepartment.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\AddDepartment.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\AddDepartment.cshtml",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\AddDepartment.cshtml",
               "RelativeToolTip": "MVCVDO\\Views\\Event\\AddDepartment.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwB4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwC0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T14:10:22.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T14:10:22.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "EmailAndPasswordSend.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\EmailAndPasswordSend.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\EmailAndPasswordSend.cshtml",
@@ -119,8 +185,7 @@
               "RelativeToolTip": "MVCVDO\\Views\\Event\\EmailAndPasswordSend.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T09:59:36.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T09:59:36.324Z"
             }
           ]
         }

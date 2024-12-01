@@ -1,0 +1,19 @@
+﻿
+<div class="form-horizontal">
+    <h4>Home</h4>
+    <hr />
+
+    @{int id = Convert.ToInt32(Session["user_id"]);
+
+        <div>
+            @Html.ActionLink("My Application", "MyApplication")
+        </div>
+        <div>
+            @Html.ActionLink("Reset Password", "ResetPassword",new {Id=id})
+        </div>
+        <div>
+            @Html.ActionLink("SignOut", "SignOut")
+        </div>
+
+    }
+</div>

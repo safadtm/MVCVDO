@@ -6,6 +6,7 @@ using System.Web;
 using System.Configuration;
 using MVCVDO.Models;
 using System.Data;
+using System.Drawing;
 
 namespace MVCVDO.Repository
 {
@@ -148,6 +149,80 @@ namespace MVCVDO.Repository
             {
                 return false;
             }
+        }
+
+        // reset password
+
+        public bool ResetPassword(int id, Users user)
+        {
+            Connection();  // Ensure the connection to the database is working
+
+            SqlCommand cmd = new SqlCommand("ResetPassword", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@Password", user.password);  // Assuming user.password is the new password
+            cmd.Parameters.AddWithValue("@CurrentPassword", user.password);  // Assuming user.currentPassword is the old password
+
+
+            try
+            {
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result > 0;  // Check if the update was successful
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions and log if necessary
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public Users GetUserById(int id)
+        {
+            Connection();  // Ensure the connection to the database is working
+
+            SqlCommand cmd = new SqlCommand("GetUserById", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@Id", id);  // Pass the user ID to the stored procedure
+
+            Users user = null;
+
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        user = new Users
+                        {
+                            id = Convert.ToInt32(reader["id"]),
+                            email = reader["email"].ToString(),
+                            password = reader["password"].ToString(),
+                            currentPassword = reader["currentPassword"].ToString(),
+                            usertype = reader["usertype"].ToString()
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return user;  // Return the retrieved user
         }
     }
 }
