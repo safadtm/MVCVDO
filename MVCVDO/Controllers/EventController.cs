@@ -234,9 +234,6 @@ namespace MVCVDO.Controllers
 
         
 
-
-
-
         // GET: Event/HomePage
         public ActionResult HomePage()
         {
@@ -296,6 +293,75 @@ namespace MVCVDO.Controllers
             }
         }
 
+
+        // GET:Event/MyApplication
+        public ActionResult MyApplication()
+        {
+            try
+            {
+                EventRepository EvnRepo = new EventRepository();
+
+                int id = Convert.ToInt32(Session["user_id"]);
+
+                DataTable dt = EvnRepo.GetApplicationStatus(id);
+
+                if (dt.Rows.Count > 0)
+                {
+                    string type = dt.Rows[0]["ApplicationStatus"].ToString();
+                    ViewBag.Flag = 1;
+                }
+                else
+                {
+                    ViewBag.Flag = 0;
+                }
+                return View();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        // GET:Event/NewApplication
+        public ActionResult NewApplication()
+        {
+            try
+            {
+                EventRepository EvnRepo = new EventRepository();
+                DataTable dt = EvnRepo.SelectDepartment(new Department());
+                ViewBag.DepartmentList = EvnRepo.ToSelectList(dt, "D_Id", "DepartmentName");
+                return View();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        // POST:Event/NewApplication
+        [HttpPost]
+        public ActionResult NewApplication(Application app)
+        {
+            int id = Session["user_id"] != null ? Convert.ToInt32(Session["user_id"]) : 0;
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    EventRepository EvnRepo = new EventRepository();
+                    if (EvnRepo.NewApplication(id, app))
+                    {
+                        ViewBag.Message = "Application submitted successfully";
+                        ModelState.Clear();
+                    }
+                }
+
+                return View("../Event/HomePage");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         //// GET: Event
         //public ActionResult Index()
         //{

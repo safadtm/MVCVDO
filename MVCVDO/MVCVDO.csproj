@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -189,6 +190,8 @@
     <Content Include="Views\Event\AddDepartment.cshtml" />
     <Content Include="Views\Event\HomePage.cshtml" />
     <Content Include="Views\Event\ResetPassword.cshtml" />
+    <Content Include="Views\Event\MyApplication.cshtml" />
+    <Content Include="Views\Event\NewApplication.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,6 +7,8 @@ using System.Configuration;
 using MVCVDO.Models;
 using System.Data;
 using System.Drawing;
+using System.Web.Mvc;
+using System.Text;
 
 namespace MVCVDO.Repository
 {
@@ -223,6 +225,98 @@ namespace MVCVDO.Repository
             }
 
             return user;  // Return the retrieved user
+        }
+
+        // Get Application Status
+        public DataTable GetApplicationStatus(int id)
+        {
+            Connection();
+            SqlCommand cmd = new SqlCommand("ApplicationStatus", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@R_Id", id);
+
+            conn.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(sdr);
+            conn.Close();
+            return dt;
+        }
+
+        // get all deparmtent from the table
+        public DataTable SelectDepartment(Department obj)
+        {
+            Connection();
+            SqlCommand cmd = new SqlCommand("GetAllDepartment", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conn.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(sdr);
+            conn.Close();
+            return dt;
+        }
+
+        // to create dropdown
+        public SelectList ToSelectList(DataTable table, string valueField, string textField)
+        {
+            if (table != null && table.Rows.Count > 0)
+            {
+                var list = table.AsEnumerable().Select(row => new
+                {
+                    Value = row[valueField],
+                    Text = row[textField]
+                }).ToList();
+
+                return new SelectList(list, "Value", "Text");
+            }
+            else
+            {
+                return new SelectList(Enumerable.Empty<SelectListItem>());
+            }
+        }
+
+        // new application
+        public bool NewApplication(int id, Application obj)
+        {
+            Connection();
+            DateTime time = DateTime.Today;
+            string format = "yyyy-MM-dd";
+            string format1 = "yyyy-MM-dd 23:59:59";
+
+            StringBuilder sb = new StringBuilder();
+            if (obj.Dance) {
+                sb.Append("Dance" + ", ");
+            }
+            if (obj.Song) { 
+                sb.Append("Song" + ", ");
+            }
+            if (obj.Drawing) { 
+                sb.Append("Drawing" + ", ");
+            }
+
+            char[] charsToTrim = { ',', ' ' };
+            obj.Events = sb.ToString().Trim().TrimEnd(charsToTrim);
+
+            SqlCommand com = new SqlCommand("AddNewApplication", conn);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@R_Id", id);
+            com.Parameters.AddWithValue("@ApplicantName", obj.ApplicantName);
+            com.Parameters.AddWithValue("@Gender", obj.Gender);
+            com.Parameters.AddWithValue("@Department", obj.Department);
+            com.Parameters.AddWithValue("@Events", obj.Events);
+            com.Parameters.AddWithValue("@Mobile", obj.Mobile);
+            com.Parameters.AddWithValue("@Address", obj.Address);
+            com.Parameters.AddWithValue("@Comments", obj.Comments);
+            com.Parameters.AddWithValue("@ApplicationDate", time.ToString(format));
+            com.Parameters.AddWithValue("@ApplicationUpdateDate", time.ToString(format1));
+
+            conn.Open();
+            int result = com.ExecuteNonQuery();
+            conn.Close();
+
+            return result > 0;
         }
     }
 }

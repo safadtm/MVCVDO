@@ -1,0 +1,22 @@
+﻿<div class="form-horizontal">
+    <h4>Application</h4>
+    <hr />
+    @{int id = Convert.ToInt32(Session["user_id"]);
+        if (ViewBag.Flag == 1)
+        {
+            <div>
+                @Html.ActionLink("Show Submitted Details", "MyApplicationStatus", new { Id = id })
+            </div>
+        }
+        else
+        {
+            <div>
+                @Html.ActionLink("Apply for cultural program", "NewApplication", new { Id = id })
+            </div>
+        }
+
+        <div>
+            @Html.ActionLink("Home", "HomePage")
+        </div>
+    }
+</div>
