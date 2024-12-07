@@ -232,7 +232,120 @@ namespace MVCVDO.Controllers
             }
         }
 
-        
+        // GET: Event/ViewAllApplication
+        public ActionResult ViewAllApplication()
+        {
+            EventRepository EvnRepo = new EventRepository();
+            ModelState.Clear();
+            return View(EvnRepo.GetMyApplicationDetails());
+        }
+
+
+        // GET:Event/ViewApplicationDetails
+
+        public ActionResult ViewApplicationDetails(int aid)
+        {
+            EventRepository EvnRepo = new EventRepository();
+
+            return View(EvnRepo.GetMyApplicationDetails().Find(emp => emp.A_Id == aid));
+
+        }
+
+        // POST:Event/Reject
+        [HttpPost]
+        public ActionResult ViewApplicationDetails(Application app, int aid, int rid)
+        {
+            try
+            {
+                EventRepository EvnRepo = new EventRepository();
+                Users user = EvnRepo.GetUserById(rid);
+
+                string mail = user.email;
+                EvnRepo.AcceptApplication(aid);
+
+                string status = "Accepted";
+                ViewBag.Status = status;
+
+                // email sending
+                AcceptDeleteMailSendToUser(mail, status);
+
+                ModelState.Clear();
+                return View("../Event/AdminHome");
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        // GET:Event/ViewApplicationDetails
+
+        public ActionResult RejectApplication(int aid, int rid)
+        {
+            try
+            {
+                EventRepository EvnRepo = new EventRepository();
+                Users user = EvnRepo.GetUserById(rid);
+
+                string mail = user.email;
+                EvnRepo.RejectApplication(aid);
+
+                string status = "Rejected";
+                ViewBag.Status = status;
+
+                // email sending
+                AcceptDeleteMailSendToUser(mail, status);
+
+                ModelState.Clear();
+                return View("../Event/AdminHome");
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        // Accept or Delete Mail Send To User
+        public void AcceptDeleteMailSendToUser(string emailId, string status)
+        {
+
+
+            var fromMail = new MailAddress("theboicoder@gmail.com", "Safad");
+            var fromEmailpassword = "adgggcaqsgwveebg"; // Use the generated app password here
+            var toEmail = new MailAddress(emailId);
+
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromMail.Address, fromEmailpassword)
+            };
+
+            var message = new System.Net.Mail.MailMessage(fromMail, toEmail)
+            {
+                Subject = "Application Status",
+                Body = $"<p>Application <strong>{status}</strong>.</p>",
+                IsBodyHtml = true
+            };
+
+            try
+            {
+                smtp.Send(message);
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception as needed
+                Console.WriteLine($"Error sending email: {ex.Message}");
+            }
+
+        }
 
         // GET: Event/HomePage
         public ActionResult HomePage()

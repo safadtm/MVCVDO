@@ -1,0 +1,55 @@
+﻿@model MVCVDO.Models.Application
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container mt-4">
+        <h4>Application Details</h4>
+        <p>Status: <strong>@ViewBag.Status</strong></p>
+        <hr />
+
+        <div>
+            <label><strong>Applicant Name:</strong></label> @Html.DisplayFor(model => model.ApplicantName)
+        </div>
+
+        <div>
+            <label><strong>Gender:</strong></label> @Html.DisplayFor(model => model.Gender)
+        </div>
+
+        <div>
+            <label><strong>Department:</strong></label> @Html.DisplayFor(model => model.Department)
+        </div>
+
+        <div>
+            <label><strong>Mobile:</strong></label> @Html.DisplayFor(model => model.Mobile)
+        </div>
+
+        <div>
+            <label><strong>Address:</strong></label> @Html.DisplayFor(model => model.Address)
+        </div>
+
+        <div>
+            <label><strong>Events:</strong></label> @Html.DisplayFor(model => model.Events)
+        </div>
+
+        <div>
+            <label><strong>Comments:</strong></label> @Html.DisplayFor(model => model.Comments)
+        </div>
+
+        <hr />
+        <div>
+            <button type="submit" class="btn btn-success">Approve</button>
+
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back", "ViewAllApplication")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -413,5 +413,22 @@ namespace MVCVDO.Repository
 
             return result > 0;
         }
+
+        // Accept  Application
+        public bool AcceptApplication(int id)
+        {
+            Connection();
+
+            SqlCommand com = new SqlCommand("UpdateApplicationStatus", conn);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@A_Id", id);
+
+            conn.Open();
+            int result = com.ExecuteNonQuery();
+            conn.Close();
+
+            return result > 0;
+        }
+
     }
 }
