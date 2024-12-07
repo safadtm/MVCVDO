@@ -318,5 +318,100 @@ namespace MVCVDO.Repository
 
             return result > 0;
         }
+
+        // Get My Application Details
+        public List<Application> GetMyApplicationDetails()
+        {
+            Connection();
+            List<Application> appData = new List<Application>();
+            SqlCommand cmd = new SqlCommand("GetMyApplication", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            conn.Open();
+            da.Fill(dt);
+            conn.Close();
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                appData.Add(
+                    new Application
+                    {
+                        A_Id = Convert.ToInt32(dr["A_Id"]),
+                        R_Id = Convert.ToInt32(dr["R_Id"]),
+                        ApplicantName = dr["ApplicantName"].ToString(),
+                        Gender = dr["Gender"].ToString(),
+                        Department = dr["Department"].ToString(),
+                        Events = dr["Events"].ToString(),
+                        Mobile = dr["Mobile"].ToString(),
+                        Address = dr["Address"].ToString(),
+                        Comments = dr["Comments"].ToString(),
+                        ApplicationStatus = dr["ApplicationStatus"].ToString(),
+                        ApplicationDate = Convert.ToDateTime(dr["ApplicationDate"]),
+                        ApplicationUpdateDate = Convert.ToDateTime(dr["ApplicationUpdateDate"]),
+                        ApprovalComments = dr["ApprovalComments"].ToString()
+                    }
+                );
+            }
+            return appData;
+        }
+
+        // Update My Application
+        public bool UpdateMyApplication(Application obj)
+        {
+            Connection();
+            DateTime time = DateTime.Now;
+            string format = "yyyy-MM-dd HH:mm:ss";
+            StringBuilder sb = new StringBuilder();
+
+            if (obj.Dance)
+            {
+                sb.Append("Dance" + ", ");
+            }
+            if (obj.Song)
+            {
+                sb.Append("Song" + ", ");
+            }
+            if (obj.Drawing)
+            {
+                sb.Append("Drawing" + ", ");
+            }
+            char[] charsToTrim = { ',', ' ' };
+            obj.Events = sb.ToString().Trim().TrimEnd(charsToTrim);
+
+            SqlCommand com = new SqlCommand("UpdateMyApplication", conn);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@A_Id", obj.A_Id);
+            com.Parameters.AddWithValue("@ApplicantName", obj.ApplicantName);
+            com.Parameters.AddWithValue("@Gender", obj.Gender);
+            com.Parameters.AddWithValue("@Department", obj.Department);
+            com.Parameters.AddWithValue("@Events", obj.Events);
+            com.Parameters.AddWithValue("@Mobile", obj.Mobile);
+            com.Parameters.AddWithValue("@Address", obj.Address);
+            com.Parameters.AddWithValue("@Comments", obj.Comments);
+            com.Parameters.AddWithValue("@ApplicationUpdateDate", time.ToString(format));
+
+            conn.Open();
+            int result = com.ExecuteNonQuery();
+            conn.Close();
+
+            return result > 0;
+        }
+
+        // Reject Application
+        public bool RejectApplication(int id)
+        {
+            Connection();
+
+            SqlCommand com = new SqlCommand("RejectApplication", conn);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@A_Id", id);
+
+            conn.Open();
+            int result = com.ExecuteNonQuery();
+            conn.Close();
+
+            return result > 0;
+        }
     }
 }

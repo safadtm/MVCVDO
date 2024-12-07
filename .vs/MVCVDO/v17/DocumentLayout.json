@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\safad\\SDSA\\MVCVDO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\newapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\myapplicationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\myapplicationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\myapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\myapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\newapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\newapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\myapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\myapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,17 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EventController.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Controllers\\EventController.cs",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs",
               "RelativeToolTip": "MVCVDO\\Controllers\\EventController.cs",
-              "ViewState": "AgIAAE8BAAAAAAAAAAAiwGUBAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAiwJABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T14:05:55.659Z",
               "IsPinned": true,
@@ -80,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Models\\Department.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Models\\Department.cs",
@@ -93,13 +97,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EventRepository.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Repository\\EventRepository.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Repository\\EventRepository.cs",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Repository\\EventRepository.cs",
               "RelativeToolTip": "MVCVDO\\Repository\\EventRepository.cs",
-              "ViewState": "AgIAABsBAAAAAAAAAAArwCkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAowJEBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T13:08:31.852Z",
               "IsPinned": true,
@@ -107,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AdminHome.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\AdminHome.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\AdminHome.cshtml",
@@ -125,32 +129,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NewApplication.cshtml",
-              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\NewApplication.cshtml",
-              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\NewApplication.cshtml",
-              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\NewApplication.cshtml",
-              "RelativeToolTip": "MVCVDO\\Views\\Event\\NewApplication.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T10:20:20.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MyApplication.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\MyApplication.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\MyApplication.cshtml",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\MyApplication.cshtml",
               "RelativeToolTip": "MVCVDO\\Views\\Event\\MyApplication.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-04T09:56:21.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyApplicationDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\MyApplicationDetails.cshtml",
+              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\MyApplicationDetails.cshtml",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\MyApplicationDetails.cshtml",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\MyApplicationDetails.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T06:12:10.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "NewApplication.cshtml",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\NewApplication.cshtml",
+              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\NewApplication.cshtml",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\NewApplication.cshtml",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\NewApplication.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAA1wEgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T10:20:20.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\HomePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T05:32:28.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Models\\Application.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Models\\Application.cs",
@@ -158,12 +188,11 @@
               "RelativeToolTip": "MVCVDO\\Models\\Application.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T09:42:40.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T09:42:40.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\Register.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\Register.cshtml",
@@ -175,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Models\\Users.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Models\\Users.cs",
@@ -187,20 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomePage.cshtml",
-              "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\HomePage.cshtml",
-              "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\HomePage.cshtml",
-              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\HomePage.cshtml",
-              "RelativeToolTip": "MVCVDO\\Views\\Event\\HomePage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T05:32:28.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\ResetPassword.cshtml",
@@ -212,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AddDepartment.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\AddDepartment.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\AddDepartment.cshtml",
@@ -224,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EmailAndPasswordSend.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\EmailAndPasswordSend.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\EmailAndPasswordSend.cshtml",

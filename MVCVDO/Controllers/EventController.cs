@@ -362,6 +362,62 @@ namespace MVCVDO.Controllers
                 throw ex;
             }
         }
+
+        // GET: Event/MyApplicationDetails
+        public ActionResult MyApplicationDetails()
+        {
+            int id = Session["user_id"] != null ? Convert.ToInt32(Session["user_id"]) : 0;
+            EventRepository EvnRepo = new EventRepository();
+
+            DataTable dt = EvnRepo.SelectDepartment(new Department());
+            ViewBag.DepartmentList = EvnRepo.ToSelectList(dt, "D_Id", "DepartmentName");
+            ModelState.Clear();
+            return View(EvnRepo.GetMyApplicationDetails().Find(evn => evn.R_Id == id));
+        }
+
+        // POST: Event/MyApplicationDetails
+        [HttpPost]
+        public ActionResult MyApplicationDetails(string buttonType, Application app)
+        {
+            ModelState.Remove("ApplicationStatus");
+            EventRepository EvnRepo = new EventRepository();
+
+            DataTable dt = EvnRepo.SelectDepartment(new Department());
+            ViewBag.DepartmentList = EvnRepo.ToSelectList(dt, "D_Id", "DepartmentName");
+
+            // Handle Update
+            if (buttonType == "Update")
+            {
+                if (app.A_Id > 0)
+                {
+                    bool isUpdated = EvnRepo.UpdateMyApplication(app);
+                    ViewBag.Message = isUpdated ? "Updated Successfully" : "Update Failed";
+                }
+                else
+                {
+                    ViewBag.Message = "Application ID is missing or invalid.";
+                }
+            }
+
+            // Handle Delete
+            if (buttonType == "Delete")
+            {
+                if (app.A_Id > 0)
+                {
+                    bool isDeleted = EvnRepo.RejectApplication(app.A_Id);
+                    ViewBag.Message = isDeleted ? "Deleted Successfully" : "Delete Failed";
+                }
+                else
+                {
+                    ViewBag.Message = "Application ID is missing or invalid.";
+                }
+            }
+
+            ModelState.Clear();
+            return View("../Event/HomePage");
+        }
+
+
         //// GET: Event
         //public ActionResult Index()
         //{

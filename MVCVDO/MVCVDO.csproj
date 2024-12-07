@@ -192,6 +192,7 @@
     <Content Include="Views\Event\ResetPassword.cshtml" />
     <Content Include="Views\Event\MyApplication.cshtml" />
     <Content Include="Views\Event\NewApplication.cshtml" />
+    <Content Include="Views\Event\MyApplicationDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
