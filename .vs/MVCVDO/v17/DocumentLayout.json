@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\viewallapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\viewallapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\viewallapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|c:\\users\\safad\\sdsa\\mvcvdo\\mvcvdo\\views\\event\\viewapplicationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|C:\\Users\\safad\\SDSA\\MVCVDO\\mvcvdo\\views\\event\\viewapplicationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D3CB23B3-C831-4583-A1F1-B38D674B1578}|MVCVDO\\MVCVDO.csproj|solutionrelative:mvcvdo\\views\\event\\viewapplicationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "MVCVDO\\Controllers\\EventController.cs",
               "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs",
               "RelativeToolTip": "MVCVDO\\Controllers\\EventController.cs",
-              "ViewState": "AgIAABkBAAAAAAAAAAAIwCoBAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T14:05:55.659Z",
               "IsPinned": true,
@@ -114,8 +114,7 @@
               "ViewState": "AgIAAGYBAAAAAAAAAADgv6EBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T13:08:31.852Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -128,8 +127,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-24T15:21:06.13Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T12:15:19.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T12:15:19.301Z"
             },
             {
               "$type": "Document",
@@ -158,8 +155,7 @@
               "RelativeToolTip": "MVCVDO\\Views\\Event\\ViewAllApplication.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T09:30:02.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T09:30:02.92Z"
             },
             {
               "$type": "Document",

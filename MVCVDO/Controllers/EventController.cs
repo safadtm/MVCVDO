@@ -314,8 +314,8 @@ namespace MVCVDO.Controllers
         {
 
 
-            var fromMail = new MailAddress("theboicoder@gmail.com", "Safad");
-            var fromEmailpassword = "adgggcaqsgwveebg"; // Use the generated app password here
+            var fromMail = new MailAddress("your@gmail.com", "your name");
+            var fromEmailpassword = "your app password"; // Use the generated app password here
             var toEmail = new MailAddress(emailId);
 
             var smtp = new SmtpClient

@@ -82,9 +82,9 @@
               "Title": "EventController.cs",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "MVCVDO\\Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs*",
-              "RelativeToolTip": "MVCVDO\\Controllers\\EventController.cs*",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAowCoBAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Controllers\\EventController.cs",
+              "RelativeToolTip": "MVCVDO\\Controllers\\EventController.cs",
+              "ViewState": "AgIAABkBAAAAAAAAAAAIwCoBAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T14:05:55.659Z",
               "IsPinned": true,
@@ -132,21 +132,21 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ViewApplicationDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml",
               "RelativeDocumentMoniker": "MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml",
-              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml*",
-              "RelativeToolTip": "MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml*",
+              "ToolTip": "C:\\Users\\safad\\SDSA\\MVCVDO\\MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml",
+              "RelativeToolTip": "MVCVDO\\Views\\Event\\ViewApplicationDetails.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-07T12:15:19.301Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
